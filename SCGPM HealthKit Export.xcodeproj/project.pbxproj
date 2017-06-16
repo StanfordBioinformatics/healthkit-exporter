@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A92422701E9C4969007CCE97 /* DiskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A924226F1E9C4969007CCE97 /* DiskStatus.swift */; };
+		A99CBE5B1E95707C00261EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CBE5A1E95707C00261EE9 /* AppDelegate.swift */; };
+		A99CBE5D1E95707C00261EE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CBE5C1E95707C00261EE9 /* ViewController.swift */; };
+		A99CBE601E95707C00261EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99CBE5E1E95707C00261EE9 /* Main.storyboard */; };
+		A99CBE621E95707C00261EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99CBE611E95707C00261EE9 /* Assets.xcassets */; };
+		A99CBE651E95707C00261EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99CBE631E95707C00261EE9 /* LaunchScreen.storyboard */; };
+		A99CBE701E95707C00261EE9 /* SCGPM_HealthKit_ExportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CBE6F1E95707C00261EE9 /* SCGPM_HealthKit_ExportTests.swift */; };
+		A99CBE7B1E95707C00261EE9 /* SCGPM_HealthKit_ExportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CBE7A1E95707C00261EE9 /* SCGPM_HealthKit_ExportUITests.swift */; };
+		A99CBE8A1E95720A00261EE9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99CBE891E95720A00261EE9 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A99CBE6C1E95707C00261EE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99CBE4F1E95707C00261EE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A99CBE561E95707C00261EE9;
+			remoteInfo = "SCGPM HealthKit Export";
+		};
+		A99CBE771E95707C00261EE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99CBE4F1E95707C00261EE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A99CBE561E95707C00261EE9;
+			remoteInfo = "SCGPM HealthKit Export";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A924226F1E9C4969007CCE97 /* DiskStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskStatus.swift; sourceTree = "<group>"; };
+		A99CBE571E95707C00261EE9 /* SCGPM HealthKit Export.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SCGPM HealthKit Export.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99CBE5A1E95707C00261EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A99CBE5C1E95707C00261EE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A99CBE5F1E95707C00261EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A99CBE611E95707C00261EE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A99CBE641E95707C00261EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A99CBE661E95707C00261EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A99CBE6B1E95707C00261EE9 /* SCGPM HealthKit ExportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SCGPM HealthKit ExportTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99CBE6F1E95707C00261EE9 /* SCGPM_HealthKit_ExportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCGPM_HealthKit_ExportTests.swift; sourceTree = "<group>"; };
+		A99CBE711E95707C00261EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A99CBE761E95707C00261EE9 /* SCGPM HealthKit ExportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SCGPM HealthKit ExportUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99CBE7A1E95707C00261EE9 /* SCGPM_HealthKit_ExportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCGPM_HealthKit_ExportUITests.swift; sourceTree = "<group>"; };
+		A99CBE7C1E95707C00261EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A99CBE891E95720A00261EE9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		A99CBE8B1E95720A00261EE9 /* SCGPM HealthKit Export.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SCGPM HealthKit Export.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A99CBE541E95707C00261EE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99CBE8A1E95720A00261EE9 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99CBE681E95707C00261EE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99CBE731E95707C00261EE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A99CBE4E1E95707C00261EE9 = {
+			isa = PBXGroup;
+			children = (
+				A99CBE591E95707C00261EE9 /* SCGPM HealthKit Export */,
+				A99CBE6E1E95707C00261EE9 /* SCGPM HealthKit ExportTests */,
+				A99CBE791E95707C00261EE9 /* SCGPM HealthKit ExportUITests */,
+				A99CBE581E95707C00261EE9 /* Products */,
+				A99CBE881E95720A00261EE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A99CBE581E95707C00261EE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A99CBE571E95707C00261EE9 /* SCGPM HealthKit Export.app */,
+				A99CBE6B1E95707C00261EE9 /* SCGPM HealthKit ExportTests.xctest */,
+				A99CBE761E95707C00261EE9 /* SCGPM HealthKit ExportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A99CBE591E95707C00261EE9 /* SCGPM HealthKit Export */ = {
+			isa = PBXGroup;
+			children = (
+				A99CBE8B1E95720A00261EE9 /* SCGPM HealthKit Export.entitlements */,
+				A99CBE5A1E95707C00261EE9 /* AppDelegate.swift */,
+				A99CBE5C1E95707C00261EE9 /* ViewController.swift */,
+				A99CBE5E1E95707C00261EE9 /* Main.storyboard */,
+				A99CBE611E95707C00261EE9 /* Assets.xcassets */,
+				A99CBE631E95707C00261EE9 /* LaunchScreen.storyboard */,
+				A99CBE661E95707C00261EE9 /* Info.plist */,
+				A924226F1E9C4969007CCE97 /* DiskStatus.swift */,
+			);
+			path = "SCGPM HealthKit Export";
+			sourceTree = "<group>";
+		};
+		A99CBE6E1E95707C00261EE9 /* SCGPM HealthKit ExportTests */ = {
+			isa = PBXGroup;
+			children = (
+				A99CBE6F1E95707C00261EE9 /* SCGPM_HealthKit_ExportTests.swift */,
+				A99CBE711E95707C00261EE9 /* Info.plist */,
+			);
+			path = "SCGPM HealthKit ExportTests";
+			sourceTree = "<group>";
+		};
+		A99CBE791E95707C00261EE9 /* SCGPM HealthKit ExportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A99CBE7A1E95707C00261EE9 /* SCGPM_HealthKit_ExportUITests.swift */,
+				A99CBE7C1E95707C00261EE9 /* Info.plist */,
+			);
+			path = "SCGPM HealthKit ExportUITests";
+			sourceTree = "<group>";
+		};
+		A99CBE881E95720A00261EE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A99CBE891E95720A00261EE9 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A99CBE561E95707C00261EE9 /* SCGPM HealthKit Export */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A99CBE7F1E95707C00261EE9 /* Build configuration list for PBXNativeTarget "SCGPM HealthKit Export" */;
+			buildPhases = (
+				A99CBE531E95707C00261EE9 /* Sources */,
+				A99CBE541E95707C00261EE9 /* Frameworks */,
+				A99CBE551E95707C00261EE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SCGPM HealthKit Export";
+			productName = "SCGPM HealthKit Export";
+			productReference = A99CBE571E95707C00261EE9 /* SCGPM HealthKit Export.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A99CBE6A1E95707C00261EE9 /* SCGPM HealthKit ExportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A99CBE821E95707C00261EE9 /* Build configuration list for PBXNativeTarget "SCGPM HealthKit ExportTests" */;
+			buildPhases = (
+				A99CBE671E95707C00261EE9 /* Sources */,
+				A99CBE681E95707C00261EE9 /* Frameworks */,
+				A99CBE691E95707C00261EE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A99CBE6D1E95707C00261EE9 /* PBXTargetDependency */,
+			);
+			name = "SCGPM HealthKit ExportTests";
+			productName = "SCGPM HealthKit ExportTests";
+			productReference = A99CBE6B1E95707C00261EE9 /* SCGPM HealthKit ExportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A99CBE751E95707C00261EE9 /* SCGPM HealthKit ExportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A99CBE851E95707C00261EE9 /* Build configuration list for PBXNativeTarget "SCGPM HealthKit ExportUITests" */;
+			buildPhases = (
+				A99CBE721E95707C00261EE9 /* Sources */,
+				A99CBE731E95707C00261EE9 /* Frameworks */,
+				A99CBE741E95707C00261EE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A99CBE781E95707C00261EE9 /* PBXTargetDependency */,
+			);
+			name = "SCGPM HealthKit ExportUITests";
+			productName = "SCGPM HealthKit ExportUITests";
+			productReference = A99CBE761E95707C00261EE9 /* SCGPM HealthKit ExportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A99CBE4F1E95707C00261EE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SCGPM;
+				TargetAttributes = {
+					A99CBE561E95707C00261EE9 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = A99DFK63C9;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					A99CBE6A1E95707C00261EE9 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = A99DFK63C9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A99CBE561E95707C00261EE9;
+					};
+					A99CBE751E95707C00261EE9 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = A99DFK63C9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A99CBE561E95707C00261EE9;
+					};
+				};
+			};
+			buildConfigurationList = A99CBE521E95707C00261EE9 /* Build configuration list for PBXProject "SCGPM HealthKit Export" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A99CBE4E1E95707C00261EE9;
+			productRefGroup = A99CBE581E95707C00261EE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A99CBE561E95707C00261EE9 /* SCGPM HealthKit Export */,
+				A99CBE6A1E95707C00261EE9 /* SCGPM HealthKit ExportTests */,
+				A99CBE751E95707C00261EE9 /* SCGPM HealthKit ExportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A99CBE551E95707C00261EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99CBE651E95707C00261EE9 /* LaunchScreen.storyboard in Resources */,
+				A99CBE621E95707C00261EE9 /* Assets.xcassets in Resources */,
+				A99CBE601E95707C00261EE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99CBE691E95707C00261EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99CBE741E95707C00261EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A99CBE531E95707C00261EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92422701E9C4969007CCE97 /* DiskStatus.swift in Sources */,
+				A99CBE5D1E95707C00261EE9 /* ViewController.swift in Sources */,
+				A99CBE5B1E95707C00261EE9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99CBE671E95707C00261EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99CBE701E95707C00261EE9 /* SCGPM_HealthKit_ExportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99CBE721E95707C00261EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99CBE7B1E95707C00261EE9 /* SCGPM_HealthKit_ExportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A99CBE6D1E95707C00261EE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A99CBE561E95707C00261EE9 /* SCGPM HealthKit Export */;
+			targetProxy = A99CBE6C1E95707C00261EE9 /* PBXContainerItemProxy */;
+		};
+		A99CBE781E95707C00261EE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A99CBE561E95707C00261EE9 /* SCGPM HealthKit Export */;
+			targetProxy = A99CBE771E95707C00261EE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A99CBE5E1E95707C00261EE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A99CBE5F1E95707C00261EE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A99CBE631E95707C00261EE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A99CBE641E95707C00261EE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A99CBE7D1E95707C00261EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A99CBE7E1E95707C00261EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A99CBE801E95707C00261EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SCGPM HealthKit Export/SCGPM HealthKit Export.entitlements";
+				DEVELOPMENT_TEAM = A99DFK63C9;
+				INFOPLIST_FILE = "SCGPM HealthKit Export/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.scgpm.SCGPM-HealthKit-Export";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A99CBE811E95707C00261EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SCGPM HealthKit Export/SCGPM HealthKit Export.entitlements";
+				DEVELOPMENT_TEAM = A99DFK63C9;
+				INFOPLIST_FILE = "SCGPM HealthKit Export/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.scgpm.SCGPM-HealthKit-Export";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A99CBE831E95707C00261EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = A99DFK63C9;
+				INFOPLIST_FILE = "SCGPM HealthKit ExportTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.scgpm.SCGPM-HealthKit-ExportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCGPM HealthKit Export.app/SCGPM HealthKit Export";
+			};
+			name = Debug;
+		};
+		A99CBE841E95707C00261EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = A99DFK63C9;
+				INFOPLIST_FILE = "SCGPM HealthKit ExportTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.scgpm.SCGPM-HealthKit-ExportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCGPM HealthKit Export.app/SCGPM HealthKit Export";
+			};
+			name = Release;
+		};
+		A99CBE861E95707C00261EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = A99DFK63C9;
+				INFOPLIST_FILE = "SCGPM HealthKit ExportUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.scgpm.SCGPM-HealthKit-ExportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "SCGPM HealthKit Export";
+			};
+			name = Debug;
+		};
+		A99CBE871E95707C00261EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = A99DFK63C9;
+				INFOPLIST_FILE = "SCGPM HealthKit ExportUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.scgpm.SCGPM-HealthKit-ExportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "SCGPM HealthKit Export";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A99CBE521E95707C00261EE9 /* Build configuration list for PBXProject "SCGPM HealthKit Export" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99CBE7D1E95707C00261EE9 /* Debug */,
+				A99CBE7E1E95707C00261EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A99CBE7F1E95707C00261EE9 /* Build configuration list for PBXNativeTarget "SCGPM HealthKit Export" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99CBE801E95707C00261EE9 /* Debug */,
+				A99CBE811E95707C00261EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A99CBE821E95707C00261EE9 /* Build configuration list for PBXNativeTarget "SCGPM HealthKit ExportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99CBE831E95707C00261EE9 /* Debug */,
+				A99CBE841E95707C00261EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A99CBE851E95707C00261EE9 /* Build configuration list for PBXNativeTarget "SCGPM HealthKit ExportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99CBE861E95707C00261EE9 /* Debug */,
+				A99CBE871E95707C00261EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A99CBE4F1E95707C00261EE9 /* Project object */;
+}

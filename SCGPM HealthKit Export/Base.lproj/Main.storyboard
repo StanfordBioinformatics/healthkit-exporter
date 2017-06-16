@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SCGPM_HealthKit_Export" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oK-rI-TxT">
+                                <rect key="frame" x="118" y="541" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disk space remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA6-2d-004">
+                                <rect key="frame" x="106" y="599" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K6t-av-Ntm" userLabel="Status Text">
+                                <rect key="frame" x="30" y="28" width="318" height="430"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zsD-83-P3t">
+                                <rect key="frame" x="30" y="499" width="318" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="5HY-JQ-ufj"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zsD-83-P3t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="6GJ-NU-B8a"/>
+                            <constraint firstItem="9oK-rI-TxT" firstAttribute="top" secondItem="zsD-83-P3t" secondAttribute="bottom" constant="40" id="7IB-ci-2OJ"/>
+                            <constraint firstItem="gA6-2d-004" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GuC-nu-7MA"/>
+                            <constraint firstItem="zsD-83-P3t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="RRV-Mk-gtB"/>
+                            <constraint firstItem="K6t-av-Ntm" firstAttribute="trailing" secondItem="zsD-83-P3t" secondAttribute="trailing" id="Unb-qy-BlV"/>
+                            <constraint firstItem="gA6-2d-004" firstAttribute="top" secondItem="9oK-rI-TxT" secondAttribute="bottom" constant="37" id="d3X-YJ-hZT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gA6-2d-004" secondAttribute="bottom" constant="47" id="ev4-E2-kTt"/>
+                            <constraint firstItem="9oK-rI-TxT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2" id="m57-cQ-Pmo"/>
+                            <constraint firstItem="zsD-83-P3t" firstAttribute="top" secondItem="K6t-av-Ntm" secondAttribute="bottom" constant="41" id="pqz-Bf-0M6"/>
+                            <constraint firstItem="K6t-av-Ntm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="tcN-2Y-SnV"/>
+                            <constraint firstItem="K6t-av-Ntm" firstAttribute="leading" secondItem="zsD-83-P3t" secondAttribute="leading" id="xr8-QA-A0T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diskSpaceLabel" destination="gA6-2d-004" id="Sp6-Rz-wGD"/>
+                        <outlet property="memoryLabel" destination="9oK-rI-TxT" id="6cR-wM-VfC"/>
+                        <outlet property="progressView" destination="zsD-83-P3t" id="e7w-9c-oax"/>
+                        <outlet property="statusText" destination="K6t-av-Ntm" id="ctm-kd-Z97"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
