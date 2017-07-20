@@ -60,7 +60,7 @@ class ViewController: UIViewController {
                         self.statusText.text = self.statusText.text + "Source: \(String(describing:source))\n"
                         print("Source: \(String(describing:source))\n")
                     }
-                    //self.queryAndExportHeartRateData(source:source)
+                    self.queryAndExportHeartRateData(source:source)
                 }
             }
         }
