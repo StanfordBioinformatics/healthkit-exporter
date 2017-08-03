@@ -94,12 +94,12 @@ class ViewController: UIViewController {
             endDate = self.userCalendar.date(bySetting: Calendar.Component.minute, value: 0, of: endDate)
             endDate = self.userCalendar.date(bySetting: Calendar.Component.second, value: 0, of: endDate)
             endDate = self.userCalendar.date(bySetting: Calendar.Component.nanosecond, value: 0, of: endDate)
-            self.exportHeartRateData(startDate:startDate,endDate:endDate,sourcePredicate:sourcePredicate,sourceName:source?.name)
+            self.exportHeartRateData(startDate:startDate,endDate:endDate,sourcePredicate:sourcePredicate,sourceName:source?.name,sourceID:source?.bundleIdentifier)
         })
         self.healthStore.execute(query)
     }
 
-    func exportHeartRateData(startDate: Date, endDate: Date, sourcePredicate: NSPredicate?, sourceName: String?) {
+    func exportHeartRateData(startDate: Date, endDate: Date, sourcePredicate: NSPredicate?, sourceName: String?, sourceID: String?) {
         let intervalPredicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
         var combinedSourceIntervalPredicate = intervalPredicate
         if sourcePredicate != nil {
@@ -108,12 +108,15 @@ class ViewController: UIViewController {
         
         let timeFormatter = DateFormatter()
         timeFormatter.dateFormat = "HH:mm:ss"
+        timeFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/YYYY"
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
         let monthFormatter = DateFormatter()
         monthFormatter.dateFormat = "YYYY-MM"
+        monthFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
         DispatchQueue.main.async {
             self.statusText.text = self.statusText.text + "\nQuerying \(dateFormatter.string(from:startDate)) - \(dateFormatter.string(from:endDate))..."
@@ -153,7 +156,7 @@ class ViewController: UIViewController {
                 let documentsDir = try FileManager.default.url(for: .documentDirectory, in:.userDomainMask, appropriateFor:nil, create:true)
                 var filename = "heartrate-\(monthFormatter.string(from:startDate)).tsv"
                 if sourceName != nil {
-                    filename = sourceName! + "-" + filename
+                    filename = sourceName! + "-" + sourceID! + "-" + filename
                 }
                 DispatchQueue.main.async {
                     self.statusText.text = self.statusText.text + "\nWriting \(filename)..."
@@ -167,11 +170,11 @@ class ViewController: UIViewController {
                 {
                     let newStartDate = endDate
                     let newEndDate = self.userCalendar.date(byAdding: DateComponents(month:1), to: endDate)
-                    self.exportHeartRateData(startDate:newStartDate,endDate:newEndDate!,sourcePredicate:sourcePredicate, sourceName:sourceName)
+                    self.exportHeartRateData(startDate:newStartDate,endDate:newEndDate!,sourcePredicate:sourcePredicate, sourceName:sourceName, sourceID:sourceID)
                 } else {
                     DispatchQueue.main.async {
-                        self.statusText.text = self.statusText.text + "\nDone!"
-                        print("Done!")
+                        self.statusText.text = self.statusText.text + "\nDone exporting from " + sourceName!
+                        print("Done exporting from " + sourceName!)
                     }
                 }
 
